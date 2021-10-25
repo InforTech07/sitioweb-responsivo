@@ -51,37 +51,7 @@ let swiper = new Swiper(".discover__container", {
     },
 })
 
-/*==================== VIDEO ====================*/
-const videoFile = document.getElementById('video-file'),
-      videoButton = document.getElementById('video-button'),
-      videoIcon = document.getElementById('video-icon')
 
-function playPause(){ 
-    if (videoFile.paused){
-        // Play video
-        videoFile.play()
-        // We change the icon
-        videoIcon.classList.add('ri-pause-line')
-        videoIcon.classList.remove('ri-play-line')
-    }
-    else {
-        // Pause video
-        videoFile.pause(); 
-        // We change the icon
-        videoIcon.classList.remove('ri-pause-line')
-        videoIcon.classList.add('ri-play-line')
-
-    }
-}
-videoButton.addEventListener('click', playPause)
-
-function finalVideo(){
-    // Video ends, icon change
-    videoIcon.classList.remove('ri-pause-line')
-    videoIcon.classList.add('ri-play-line')
-}
-// ended, when the video ends
-videoFile.addEventListener('ended', finalVideo)
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
@@ -93,7 +63,7 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+/* const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
     const scrollY = window.pageYOffset
@@ -110,7 +80,7 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive) */
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({

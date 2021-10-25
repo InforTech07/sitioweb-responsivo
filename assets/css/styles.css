@@ -242,7 +242,7 @@ input {
 }
 
 .nav__link {
-  color: var(--text-color-light);
+  color: #0E373F;
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
 }
